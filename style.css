@@ -1,0 +1,97 @@
+body {
+  background: #031321;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.board {
+  margin: auto;
+  width: 270px;
+  height: 270px;
+  display: flex;
+  flex-flow: row wrap;
+  border: 2px solid #be531d;
+}
+.board div {
+  width: 10px;
+  height: 10px;
+}
+.snake {
+  background-color: #21df48;
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+}
+
+.apple {
+  background-color: #dc3626;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+h2 {
+  text-align: center;
+  color: #df2162;
+}
+#controller {
+  position: absolute;
+  height: 110px;
+  width: 160px;
+  right: 25px;
+  bottom: 35px;
+}
+#controller button {
+  height: 50px;
+  width: 50px;
+  outline: none;
+  background-color: #091b44;
+  color: #fff;
+}
+.left {
+  position: absolute;
+  left: 0;
+  bottom: 50%;
+  transform: translateY(50%);
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+.down {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+.right {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+.up {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+.start {
+  position: absolute;
+  height: 35px;
+  left: 35px;
+  width: 100px;
+  bottom: 80px;
+  border-radius: 20px;
+  outline: none;
+  color: #fff;
+  background-color: #091b44;
+}
+h3 {
+  text-align: center;
+  color: white;
+}
